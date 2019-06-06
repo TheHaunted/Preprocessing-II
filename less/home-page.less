@@ -15,19 +15,31 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      
+      @media (max-width: 500px) {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media (max-width: 500px) {
+          width: 100%;
+        }
       }
     }
   }
@@ -35,6 +47,11 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -44,6 +61,16 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+    }
+
+    img {
+      @media (max-width: 500px) {
+        width: 100%;
+      }
     }
   }
 
