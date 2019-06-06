@@ -1,11 +1,11 @@
 // Mixins in here
 
-.button{
-    background: @button-bg;
+.button(@bg, @text){
+    background: @bg;
     width: 85%;
     padding: 10px 0px;
     font-size: 2rem;
-    color: @white;
+    color: @text;
     border-radius: 15px;
     text-align: center;
   }
