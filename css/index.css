@@ -169,34 +169,39 @@ img {
   margin: 0 auto;
 }
 .nav-container {
+  width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.nav-container .nav {
+  width: 800px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px dashed #C0C0C0;
   padding: 20px 0 5px 0;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
-  .nav-container {
+  .nav-container .nav {
     flex-direction: column;
     align-items: center;
   }
 }
-.nav-container .logo {
+.nav-container .nav .logo {
   font-family: 'Indie Flower';
   font-size: 4rem;
 }
-.nav-container nav {
+.nav-container .nav nav {
   display: flex;
   width: 50%;
   justify-content: space-around;
   align-items: center;
 }
 @media (max-width: 500px) {
-  .nav-container nav {
+  .nav-container .nav nav {
     width: 100%;
     margin-top: 15px;
   }
 }
-.nav-container nav a {
+.nav-container .nav nav a {
   text-decoration: none;
   color: black;
   font-size: 1.5rem;
