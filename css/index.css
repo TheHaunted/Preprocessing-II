@@ -172,6 +172,12 @@ img {
   width: 100%;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .nav-container .nav {
   width: 800px;
   display: flex;
@@ -182,6 +188,7 @@ img {
 @media (max-width: 500px) {
   .nav-container .nav {
     flex-direction: column;
+    width: 100%;
     align-items: center;
   }
 }
@@ -216,6 +223,14 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home {
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .home {
+    padding: 0 20px;
+  }
 }
 .home header {
   border-bottom: 2px dashed #C0C0C0;
